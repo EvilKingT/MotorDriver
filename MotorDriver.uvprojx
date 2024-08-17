@@ -629,11 +629,6 @@
               <FilePath>.\lib\Src\stm32f1xx_hal_tim_ex.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f1xx_hal_timebase_tim_template.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lib\Src\stm32f1xx_hal_timebase_tim_template.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f1xx_hal_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\lib\Src\stm32f1xx_hal_uart.c</FilePath>
@@ -742,6 +737,26 @@
               <FileName>startup_stm32f103xb.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\core\startup_stm32f103xb.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>src</GroupName>
+          <Files>
+            <File>
+              <FileName>init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\init.c</FilePath>
+            </File>
+            <File>
+              <FileName>bldc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bldc.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor_ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\motor_ctrl.c</FilePath>
             </File>
           </Files>
         </Group>

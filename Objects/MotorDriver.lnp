@@ -42,7 +42,6 @@
 ".\objects\stm32f1xx_hal_sram.o"
 ".\objects\stm32f1xx_hal_tim.o"
 ".\objects\stm32f1xx_hal_tim_ex.o"
-".\objects\stm32f1xx_hal_timebase_tim_template.o"
 ".\objects\stm32f1xx_hal_uart.o"
 ".\objects\stm32f1xx_hal_usart.o"
 ".\objects\stm32f1xx_hal_wwdg.o"
@@ -64,6 +63,9 @@
 ".\objects\stm32f1xx_ll_usb.o"
 ".\objects\stm32f1xx_ll_utils.o"
 ".\objects\startup_stm32f103xb.o"
+".\objects\init.o"
+".\objects\bldc.o"
+".\objects\motor_ctrl.o"
 --strict --scatter ".\Objects\MotorDriver.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

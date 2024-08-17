@@ -1,5 +1,4 @@
 .\objects\main.o: main.c
-.\objects\main.o: .\user_inc\stm32f1xx_it.h
 .\objects\main.o: .\user_inc\main.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal.h
 .\objects\main.o: .\user_inc\stm32f1xx_hal_conf.h
@@ -30,3 +29,8 @@
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\main.o: .\user_inc\stm32f1xx_nucleo.h
+.\objects\main.o: cfg.h
+.\objects\main.o: init.h
+.\objects\main.o: bldc.h
+.\objects\main.o: motor_ctrl.h
+.\objects\main.o: cfg.h
