@@ -22,6 +22,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f1xx_it.h"
+#include "cfg.h"
 
 /** @addtogroup STM32F1xx_HAL_Examples
   * @{
@@ -36,7 +37,8 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 extern ADC_HandleTypeDef    AdcHandle;
-
+extern TIM_HandleTypeDef    TIM2_Handler, htim3;
+extern uint32_t counter;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 
@@ -190,13 +192,17 @@ void ADCx_DMA_IRQHandler(void)
 /*void PPP_IRQHandler(void)
 {
 }*/
-
-
-
+void TIM2_IRQHandler(void)
+{
+	HAL_TIM_IRQHandler(&TIM2_Handler);
+}
 /**
   * @}
   */
-
+void TIM3_IRQHandler(void)
+{
+	HAL_TIM_IRQHandler(&htim3);
+}
 /**
   * @}
   */

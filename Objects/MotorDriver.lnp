@@ -66,6 +66,9 @@
 ".\objects\init.o"
 ".\objects\bldc.o"
 ".\objects\motor_ctrl.o"
+".\objects\measure.o"
+".\objects\comm.o"
+".\objects\net_pid.o"
 --strict --scatter ".\Objects\MotorDriver.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

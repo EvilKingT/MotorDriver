@@ -758,6 +758,21 @@
               <FileType>1</FileType>
               <FilePath>.\motor_ctrl.c</FilePath>
             </File>
+            <File>
+              <FileName>measure.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\measure.c</FilePath>
+            </File>
+            <File>
+              <FileName>comm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\comm.c</FilePath>
+            </File>
+            <File>
+              <FileName>net_pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\net_pid.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

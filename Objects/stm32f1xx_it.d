@@ -30,3 +30,9 @@
 .\objects\stm32f1xx_it.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\stm32f1xx_it.o: .\user_inc\stm32f1xx_nucleo.h
 .\objects\stm32f1xx_it.o: .\user_inc\stm32f1xx_it.h
+.\objects\stm32f1xx_it.o: cfg.h
+.\objects\stm32f1xx_it.o: init.h
+.\objects\stm32f1xx_it.o: bldc.h
+.\objects\stm32f1xx_it.o: motor_ctrl.h
+.\objects\stm32f1xx_it.o: measure.h
+.\objects\stm32f1xx_it.o: comm.h

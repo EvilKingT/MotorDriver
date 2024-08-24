@@ -8,5 +8,7 @@ void H_sensor_init(void);
 void Stop_Start_Init(void);
 void TIM_Init(void);
 void sys_init(void);
+void Cap_Tim_Init(void);
+void capture_init(void);
 
 #endif

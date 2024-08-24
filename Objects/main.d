@@ -33,4 +33,5 @@
 .\objects\main.o: init.h
 .\objects\main.o: bldc.h
 .\objects\main.o: motor_ctrl.h
-.\objects\main.o: cfg.h
+.\objects\main.o: measure.h
+.\objects\main.o: comm.h

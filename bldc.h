@@ -23,5 +23,6 @@ void whul(void);
 void whvl(void);
 void Stop_motor(void);
 void Start_motor(void);
+void Is_Forward(void);
 
 #endif

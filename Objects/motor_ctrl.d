@@ -1,5 +1,5 @@
 .\objects\motor_ctrl.o: motor_ctrl.c
-.\objects\motor_ctrl.o: motor_ctrl.h
+.\objects\motor_ctrl.o: cfg.h
 .\objects\motor_ctrl.o: .\lib\Inc\stm32f1xx_hal.h
 .\objects\motor_ctrl.o: .\user_inc\stm32f1xx_hal_conf.h
 .\objects\motor_ctrl.o: .\lib\Inc\stm32f1xx_hal_rcc.h
@@ -28,7 +28,9 @@
 .\objects\motor_ctrl.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
 .\objects\motor_ctrl.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\motor_ctrl.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
-.\objects\motor_ctrl.o: cfg.h
 .\objects\motor_ctrl.o: init.h
 .\objects\motor_ctrl.o: bldc.h
 .\objects\motor_ctrl.o: motor_ctrl.h
+.\objects\motor_ctrl.o: measure.h
+.\objects\motor_ctrl.o: comm.h
+.\objects\motor_ctrl.o: net_pid.h

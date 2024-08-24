@@ -1,5 +1,4 @@
 .\objects\bldc.o: bldc.c
-.\objects\bldc.o: bldc.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal.h
 .\objects\bldc.o: .\user_inc\stm32f1xx_hal_conf.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_rcc.h
@@ -30,5 +29,7 @@
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\bldc.o: cfg.h
 .\objects\bldc.o: init.h
+.\objects\bldc.o: bldc.h
 .\objects\bldc.o: motor_ctrl.h
-.\objects\bldc.o: cfg.h
+.\objects\bldc.o: measure.h
+.\objects\bldc.o: comm.h
