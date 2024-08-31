@@ -6,13 +6,13 @@
 .\objects\init.o: .\user_inc\stm32f1xx.h
 .\objects\init.o: .\user_inc\stm32f103xe.h
 .\objects\init.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\core_cm3.h
-.\objects\init.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\init.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_version.h
 .\objects\init.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_compiler.h
 .\objects\init.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_armcc.h
 .\objects\init.o: .\user_inc\system_stm32f1xx.h
 .\objects\init.o: .\lib\Inc\stm32f1xx_hal.h
-.\objects\init.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\init.o: .\lib\Inc\stm32f1xx_hal_rcc_ex.h
 .\objects\init.o: .\lib\Inc\stm32f1xx_hal_gpio.h
 .\objects\init.o: .\lib\Inc\stm32f1xx_hal_gpio_ex.h
