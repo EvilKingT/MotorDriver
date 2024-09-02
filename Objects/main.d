@@ -36,3 +36,4 @@
 .\objects\main.o: measure.h
 .\objects\main.o: comm.h
 .\objects\main.o: adc.h
+.\objects\main.o: spi.h

@@ -3,6 +3,7 @@
 #include "init.h"
 #include "bldc.h"
 #include "adc.h"
+#include "spi.h"
 
 extern motor_ctrl motor;
 
@@ -20,6 +21,14 @@ int main(void)
 	// add by ty, maybe there was some error
 	HAL_Init(); // 初始化HAL库
     ADC_Config(); // 配置ADC
+	SPI_Init(); // 初始化SPI
+
+    while (1) {
+        SPI_Transmit(0xAA); // 发送数据
+        uint8_t receivedData = SPI_Receive(); // 接收数据
+        // 处理接收到的数据
+    }
+	
     while (1) {
         uint16_t adcValue = Read_ADC();
         // 处理 adcValue
