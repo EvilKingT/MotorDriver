@@ -6,21 +6,13 @@
 .\objects\stm32f1xx_hal_rcc.o: .\user_inc\stm32f1xx.h
 .\objects\stm32f1xx_hal_rcc.o: .\user_inc\stm32f103xe.h
 .\objects\stm32f1xx_hal_rcc.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\core_cm3.h
-<<<<<<< HEAD
 .\objects\stm32f1xx_hal_rcc.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdint.h
-=======
-.\objects\stm32f1xx_hal_rcc.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
->>>>>>> dbaaf4fc23987c6b08907ee2353d39e8cc388f37
 .\objects\stm32f1xx_hal_rcc.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_version.h
 .\objects\stm32f1xx_hal_rcc.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_compiler.h
 .\objects\stm32f1xx_hal_rcc.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_armcc.h
 .\objects\stm32f1xx_hal_rcc.o: .\user_inc\system_stm32f1xx.h
 .\objects\stm32f1xx_hal_rcc.o: .\lib\Inc\stm32f1xx_hal.h
-<<<<<<< HEAD
 .\objects\stm32f1xx_hal_rcc.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stddef.h
-=======
-.\objects\stm32f1xx_hal_rcc.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
->>>>>>> dbaaf4fc23987c6b08907ee2353d39e8cc388f37
 .\objects\stm32f1xx_hal_rcc.o: .\lib\Inc\stm32f1xx_hal_rcc_ex.h
 .\objects\stm32f1xx_hal_rcc.o: .\lib\Inc\stm32f1xx_hal_gpio.h
 .\objects\stm32f1xx_hal_rcc.o: .\lib\Inc\stm32f1xx_hal_gpio_ex.h

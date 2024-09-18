@@ -182,25 +182,21 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	}
 	if(htim->Instance == TIM4)
 	{
-		i = Is_Forward();
 		getEncode(i);
 		counter = 0;
-		//gtimRestart();
 	}
 }
 
 void getEncode(uint8_t i)
 {
-	cnt_all = counter*65536;
-	cnt_all += __HAL_TIM_GET_COUNTER(&htim3);
+	cnt_all = __HAL_TIM_GET_COUNTER(&htim3);
+	cnt_all += counter*65536;
 	cnt_all -= last_cnt;
 	last_cnt = __HAL_TIM_GET_COUNTER(&htim3);
-	cnt_all = cnt_all*3000;
-	if(i == 0) cnt_all = -cnt_all;
+	cnt_all = cnt_all*3000/52;
 }
 
 void gtimRestart(void) 
-
 { 
 	 __HAL_TIM_DISABLE(&htim3); /* 关闭定时器 TIMX */ 
 	 counter = 0; /* 累加器清零 */ 

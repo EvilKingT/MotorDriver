@@ -7,25 +7,30 @@
 #include "usart.h"
 
 extern motor_ctrl motor;
-
+extern TIM_HandleTypeDef htim3;
+volatile uint16_t ecnt = 0;
 int main(void)
 {
 	sys_init();
-	motor.pulse = (TIMARR+1)/2;		//50%ռ�ձ�
-	uhvl();
+	motor.pulse = (TIMARR+1)/2;
+	HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
 
     uint8_t len;
     uint16_t times = 0;
 
-    HAL_Init();                             /* ԵʼۯHALࠢ */
-    sys_stm32_clock_init(RCC_PLL_MUL9);     /* ʨ׃ʱדΪ72Mhz */
-    delay_init(72);                         /* ғʱԵʼۯ */
-    usart_init(115200);                     /* ԮࠚԵʼۯΪ115200 */
+
+    sys_stm32_clock_init(RCC_PLL_MUL9);
+    delay_init(72);
+    usart_init(115200);
+	gtimRestart();
+	motor.dir = FORWARD;
+	motor.run_flag = START;
     while (1)
     {
-        if (g_usart_rx_sta & 0x8000)      /* ޓ˕ս˽ߝ? */
+		ecnt = __HAL_TIM_GET_COUNTER(&htim3);
+        /*if (g_usart_rx_sta & 0x8000)      
         {
-            len = g_usart_rx_sta & 0x3fff;  /* փսՋՎޓ˕սք˽ߝӤ׈ */
+            len = g_usart_rx_sta & 0x3fff;  
             printf("\r\nGoodMorning!\r\n");
 
             HAL_UART_Transmit(&g_uart1_handle,(uint8_t*)g_usart_rx_buf, len, 1000);  
@@ -46,7 +51,7 @@ int main(void)
             if (times % 200 == 0)printf("Ohyes\r\n");
 
             delay_ms(10);
-        }
+        }*/
     }
 }
 

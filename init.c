@@ -123,7 +123,7 @@ void TIM_Init(void)
 	htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
 	
 	htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
-	htim4.Init.Period = 20-1; //3ms
+	htim4.Init.Period = 20-1; //2ms采样一次转速
 	
 	HAL_TIM_Base_Init(&TIM2_Handler); 
 	HAL_TIM_Base_Init(&htim4); 
@@ -216,31 +216,34 @@ void capture_init(void)
 
 }
 
-void Cap_Tim_Init(void)
+void Cap_Tim_Init(void)     //引脚映射到PA6
 {
-	TIM_SlaveConfigTypeDef tim_slave_config = {0};
+	//TIM_SlaveConfigTypeDef tim_slave_config = {0};
+	TIM_Encoder_InitTypeDef sConfig = {0};
+	TIM_MasterConfigTypeDef sMasterConfig = {0};
 	__HAL_RCC_TIM3_CLK_ENABLE(); 
 	
 	htim3.Instance = TIM3;
 	htim3.Init.Prescaler = 0;
+	htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
 	htim3.Init.Period = 65535;
 	htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-	htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-
-	HAL_TIM_IC_Init(&htim3);
+	htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	sConfig.EncoderMode = TIM_ENCODERMODE_TI1;
+	sConfig.IC1Polarity = TIM_ICPOLARITY_RISING;
+	sConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;
+	sConfig.IC1Prescaler = TIM_ICPSC_DIV1;
+	sConfig.IC1Filter = 0;
+	sConfig.IC2Polarity = TIM_ICPOLARITY_RISING;
+	sConfig.IC2Selection = TIM_ICSELECTION_DIRECTTI;
+	sConfig.IC2Prescaler = TIM_ICPSC_DIV1;
+	sConfig.IC2Filter = 0;
 	
-	tim_slave_config.SlaveMode = TIM_SLAVEMODE_EXTERNAL1;
-	tim_slave_config.InputTrigger = TIM_TS_TI1FP1;
-	tim_slave_config.TriggerPolarity = TIM_TRIGGERPOLARITY_RISING;
-	tim_slave_config.TriggerPrescaler = TIM_TRIGGERPRESCALER_DIV1;
-	tim_slave_config.TriggerFilter = 0x0;
-	HAL_TIM_SlaveConfigSynchro(&htim3, &tim_slave_config);
+	HAL_TIM_Encoder_Init(&htim3, &sConfig);
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
 	
-	HAL_NVIC_SetPriority(TIM3_IRQn, 1, 1);
-	HAL_NVIC_EnableIRQ(TIM3_IRQn);
-	
-	__HAL_TIM_ENABLE_IT(&htim3, TIM_IT_UPDATE);
-	HAL_TIM_IC_Start(&htim3, TIM_CHANNEL_1);
+	HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig);
 }
 
 void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)

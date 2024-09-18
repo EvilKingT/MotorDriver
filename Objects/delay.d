@@ -3,7 +3,7 @@
 .\objects\delay.o: .\user_inc\stm32f1xx.h
 .\objects\delay.o: .\user_inc\stm32f103xe.h
 .\objects\delay.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\core_cm3.h
-.\objects\delay.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\delay.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_version.h
 .\objects\delay.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_compiler.h
 .\objects\delay.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_armcc.h
@@ -13,7 +13,7 @@
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_rcc.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_def.h
 .\objects\delay.o: .\user_inc\stm32f1xx.h
-.\objects\delay.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\delay.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_rcc_ex.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_gpio.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_gpio_ex.h

@@ -47,6 +47,7 @@
 #define V_SOURCE 24  //驱动板最大供电
 #define V_MAX 18 //电机最大耐受电压
 #define POLE_NUM 8 //maxon极对数
+#define ENC_OLD 51 //老电机一圈码数
 
 typedef void(*pctr) (void);
 

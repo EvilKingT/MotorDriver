@@ -3,7 +3,7 @@
 .\objects\usart.o: .\user_inc\stm32f1xx.h
 .\objects\usart.o: .\user_inc\stm32f103xe.h
 .\objects\usart.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\core_cm3.h
-.\objects\usart.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_version.h
 .\objects\usart.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_compiler.h
 .\objects\usart.o: .\STM32CubeF1-master\Drivers\CMSIS\Include\cmsis_armcc.h
@@ -13,7 +13,7 @@
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_rcc.h
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_def.h
 .\objects\usart.o: .\user_inc\stm32f1xx.h
-.\objects\usart.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\usart.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_rcc_ex.h
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_gpio.h
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_gpio_ex.h
@@ -30,4 +30,4 @@
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\usart.o: .\lib\Inc\stm32f1xx_hal_uart.h
 .\objects\usart.o: usart.h
-.\objects\usart.o: C:\Application\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdio.h
