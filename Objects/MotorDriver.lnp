@@ -69,8 +69,14 @@
 ".\objects\measure.o"
 ".\objects\comm.o"
 ".\objects\net_pid.o"
+<<<<<<< HEAD
 ".\objects\spi.o"
 ".\objects\adc.o"
+=======
+".\objects\delay.o"
+".\objects\sys.o"
+".\objects\usart.o"
+>>>>>>> dbaaf4fc23987c6b08907ee2353d39e8cc388f37
 --strict --scatter ".\Objects\MotorDriver.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
