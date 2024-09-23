@@ -6,6 +6,11 @@
 #include "motor_ctrl.h"
 #include "measure.h"
 #include "comm.h"
+#include "foc.h"
+#include "encode.h"
+#include "delay.h"
+#include "sys.h"
+#include "usart.h"
 
 #define TIMPSC 71
 #define TIMARR 499
@@ -16,6 +21,7 @@
 
 #define GPIO_HALLSENSOR  GPIOB
 #define GPIO_LBridge GPIOB
+#define __Constrain(x) x>0.375?0.375:(x<-0.375?-0.375:x)
 
 #define UL_ON  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET)
 #define VL_ON  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET)
@@ -48,6 +54,18 @@
 #define V_MAX 18 //电机最大耐受电压
 #define POLE_NUM 8 //maxon极对数
 #define ENC_OLD 51 //老电机一圈码数
+#define THETA_MAX 45 //最大回正力矩对应的角度
+#define V_OFFSET 0.375//防止FOC陷入死区，零点加入偏置
+#define KE 24 //电机反电动势常数
+
+#define SAMPLETIME 0.002//2ms读取一次电机转速
+#define ENATURE 2.718282//自然对数
+#define OMEGAC 200//adrc观测器带宽
+#define RADRC 5//ADRC跟踪因子，越大跟踪越快，越小超调幅度越小
+#define BADRC 0.75//控制器增益
+#define ADRCLIMIT 150//ADRC输出限幅
+#define KPADRC 10
+#define KDADRC 10
 
 typedef void(*pctr) (void);
 

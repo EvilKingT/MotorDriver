@@ -26,6 +26,7 @@
 .\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_dac_ex.h
 .\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_flash.h
 .\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
+.\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_spi.h
 .\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\net_pid.o: .\lib\Inc\stm32f1xx_hal_uart.h
@@ -35,4 +36,11 @@
 .\objects\net_pid.o: motor_ctrl.h
 .\objects\net_pid.o: measure.h
 .\objects\net_pid.o: comm.h
+.\objects\net_pid.o: foc.h
+.\objects\net_pid.o: cfg.h
+.\objects\net_pid.o: encode.h
+.\objects\net_pid.o: delay.h
+.\objects\net_pid.o: sys.h
+.\objects\net_pid.o: usart.h
+.\objects\net_pid.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\net_pid.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\math.h

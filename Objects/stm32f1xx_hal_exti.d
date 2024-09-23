@@ -25,6 +25,7 @@
 .\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_dac_ex.h
 .\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_flash.h
 .\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
+.\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_spi.h
 .\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\stm32f1xx_hal_exti.o: .\lib\Inc\stm32f1xx_hal_uart.h

@@ -25,6 +25,7 @@
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_dac_ex.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_flash.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
+.\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_spi.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\bldc.o: .\lib\Inc\stm32f1xx_hal_uart.h
@@ -34,3 +35,10 @@
 .\objects\bldc.o: motor_ctrl.h
 .\objects\bldc.o: measure.h
 .\objects\bldc.o: comm.h
+.\objects\bldc.o: foc.h
+.\objects\bldc.o: cfg.h
+.\objects\bldc.o: encode.h
+.\objects\bldc.o: delay.h
+.\objects\bldc.o: sys.h
+.\objects\bldc.o: usart.h
+.\objects\bldc.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdio.h

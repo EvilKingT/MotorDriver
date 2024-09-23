@@ -788,6 +788,16 @@
               <FileType>1</FileType>
               <FilePath>.\usart.c</FilePath>
             </File>
+            <File>
+              <FileName>foc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\foc.c</FilePath>
+            </File>
+            <File>
+              <FileName>encode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\encode.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

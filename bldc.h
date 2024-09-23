@@ -6,7 +6,9 @@
 ******************************************/
 typedef struct
 {
-	__IO uint16_t pulse;
+	__IO uint16_t pulsea;
+	__IO uint16_t pulseb;
+	__IO uint16_t pulsec;
 	__IO uint8_t dir;
 	__IO uint8_t step_now;
 	__IO uint8_t step_last;

@@ -26,6 +26,7 @@
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_dac_ex.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_flash.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
+.\objects\main.o: .\lib\Inc\stm32f1xx_hal_spi.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\main.o: .\lib\Inc\stm32f1xx_hal_uart.h
@@ -36,6 +37,9 @@
 .\objects\main.o: motor_ctrl.h
 .\objects\main.o: measure.h
 .\objects\main.o: comm.h
+.\objects\main.o: foc.h
+.\objects\main.o: cfg.h
+.\objects\main.o: encode.h
 .\objects\main.o: delay.h
 .\objects\main.o: sys.h
 .\objects\main.o: usart.h

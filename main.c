@@ -1,10 +1,5 @@
 #include "main.h"
 #include "cfg.h"
-#include "init.h"
-#include "bldc.h"
-#include "delay.h"
-#include "sys.h"
-#include "usart.h"
 
 extern motor_ctrl motor;
 extern TIM_HandleTypeDef htim3;
@@ -12,22 +7,18 @@ volatile uint16_t ecnt = 0;
 int main(void)
 {
 	sys_init();
-	motor.pulse = (TIMARR+1)/2;
+	motor.pulsea = (TIMARR+1)/2;
+	motor.pulseb = (TIMARR+1)/2;
+	motor.pulsec = (TIMARR+1)/2;
 	HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
 
-    uint8_t len;
-    uint16_t times = 0;
-
-
-    sys_stm32_clock_init(RCC_PLL_MUL9);
-    delay_init(72);
-    usart_init(115200);
-	gtimRestart();
+    //uint8_t len;
+    //uint16_t times = 0;
 	motor.dir = FORWARD;
 	motor.run_flag = START;
     while (1)
     {
-		ecnt = __HAL_TIM_GET_COUNTER(&htim3);
+		//ecnt = __HAL_TIM_GET_COUNTER(&htim3);
         /*if (g_usart_rx_sta & 0x8000)      
         {
             len = g_usart_rx_sta & 0x3fff;  

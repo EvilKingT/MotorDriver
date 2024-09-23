@@ -1,5 +1,4 @@
 .\objects\foc.o: foc.c
-.\objects\foc.o: foc.h
 .\objects\foc.o: cfg.h
 .\objects\foc.o: .\lib\Inc\stm32f1xx_hal.h
 .\objects\foc.o: .\user_inc\stm32f1xx_hal_conf.h
@@ -27,10 +26,20 @@
 .\objects\foc.o: .\lib\Inc\stm32f1xx_hal_dac_ex.h
 .\objects\foc.o: .\lib\Inc\stm32f1xx_hal_flash.h
 .\objects\foc.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
+.\objects\foc.o: .\lib\Inc\stm32f1xx_hal_spi.h
 .\objects\foc.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\foc.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
+.\objects\foc.o: .\lib\Inc\stm32f1xx_hal_uart.h
 .\objects\foc.o: init.h
 .\objects\foc.o: bldc.h
 .\objects\foc.o: motor_ctrl.h
 .\objects\foc.o: measure.h
 .\objects\foc.o: comm.h
+.\objects\foc.o: foc.h
+.\objects\foc.o: cfg.h
+.\objects\foc.o: encode.h
+.\objects\foc.o: delay.h
+.\objects\foc.o: sys.h
+.\objects\foc.o: usart.h
+.\objects\foc.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\foc.o: D:\SRC\UV4\ARM\ARMCC\Bin\..\include\math.h

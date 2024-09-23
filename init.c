@@ -1,5 +1,6 @@
 #include "stm32f1xx_hal.h"
 #include "cfg.h"
+#include "encode.h"
 
 /******************************************************************************
 2024.8.17 负责人：wyq
@@ -246,20 +247,6 @@ void Cap_Tim_Init(void)     //引脚映射到PA6
 	HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig);
 }
 
-void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)
-{
-	
-	GPIO_InitTypeDef gpio_init_struct;
-	
-	gpio_init_struct.Pin = GPIO_PIN_4;
-	gpio_init_struct.Mode = GPIO_MODE_AF_PP;
-	gpio_init_struct.Speed = GPIO_SPEED_FREQ_HIGH;
-	gpio_init_struct.Pull = GPIO_PULLDOWN;
-	HAL_GPIO_Init(GPIOB, &gpio_init_struct);
-	
-	__HAL_AFIO_REMAP_TIM3_PARTIAL();
-}
-
 void sys_init(void)
 {
 	HAL_Init();
@@ -269,4 +256,9 @@ void sys_init(void)
 	Stop_Start_Init();
 	TIM_Init();
 	capture_init();
+	sys_stm32_clock_init(RCC_PLL_MUL9);
+    delay_init(72);
+    usart_init(115200);
+	gtimRestart();
+	MX_SPI1_Init();
 }

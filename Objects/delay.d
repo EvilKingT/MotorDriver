@@ -26,6 +26,7 @@
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_dac_ex.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_flash.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_flash_ex.h
+.\objects\delay.o: .\lib\Inc\stm32f1xx_hal_spi.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_tim.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_tim_ex.h
 .\objects\delay.o: .\lib\Inc\stm32f1xx_hal_uart.h
